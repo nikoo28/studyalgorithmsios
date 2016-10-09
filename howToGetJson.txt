@@ -1,0 +1,47 @@
+Get the json for home page that has all the posts
+
+GET http://www.studyalgorithms.com/wp-json/wp/v2/posts
+
+=======================================================================================================================
+
+Now we have several categories that are mapped
+This can be retrieved from the JSON at
+GET http://www.studyalgorithms.com/wp-json/wp/v2/categories
+
+If this parsing is not required. Here is the mapping
+2 -> Arrays
+3 -> Linked Lists
+4 -> Strings
+5 -> Trees
+7 -> Theory
+8 -> Misc
+
+Now to get a JSON for a particular category
+
+# This shall give you the JSON for arrays
+GET http://www.studyalgorithms.com/wp-json/wp/v2/posts?categories=2
+
+=======================================================================================================================
+
+To implement search functionality, get the string you want to search from user. Let it be 'binary'
+Get the JSON of the resulting page using the query
+
+GET http://www.studyalgorithms.com/wp-json/wp/v2/posts?filter[s]=binary
+
+=======================================================================================================================
+
+To get all the pages in the site
+GET http://www.studyalgorithms.com/wp-json/wp/v2/pages
+
+This will give you the page id
+2 -> Feedback
+144 -> SiteMap
+
+Get the JSON for a particular page
+http://www.studyalgorithms.com/wp-json/wp/v2/pages/2
+
+=======================================================================================================================
+
+For more documentation visit
+API LINK:- http://v2.wp-api.org/
+DEMO:- https://demo.wp-api.org/
