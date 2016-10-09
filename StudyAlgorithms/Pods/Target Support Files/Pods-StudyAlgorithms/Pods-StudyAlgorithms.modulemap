@@ -1,0 +1,6 @@
+framework module Pods_StudyAlgorithms {
+  umbrella header "Pods-StudyAlgorithms-umbrella.h"
+
+  export *
+  module * { export * }
+}
