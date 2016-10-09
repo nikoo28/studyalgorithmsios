@@ -7,6 +7,7 @@ target 'StudyAlgorithms' do
 
   # Pods for StudyAlgorithms
   pod 'AKSideMenu'
+  pod 'MGSwipeTableCell'
 
   target 'StudyAlgorithmsTests' do
     inherit! :search_paths
